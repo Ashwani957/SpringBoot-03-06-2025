@@ -5,6 +5,9 @@ package com.ecommerce.ProuductList.dto;
 
 // IN dto we only show the useful information which are necessary do not show the unwnated information to the client like password , emial
 
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import lombok.*;
 
 import java.util.List;
@@ -14,6 +17,7 @@ import java.util.List;
 
 
 public class CategoryDTO {
+
 
     private Long id ;
     private String name;

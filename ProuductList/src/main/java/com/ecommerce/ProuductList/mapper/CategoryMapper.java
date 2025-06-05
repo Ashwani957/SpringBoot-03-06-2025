@@ -5,9 +5,6 @@ import com.ecommerce.ProuductList.entity.Category;
 
 public class CategoryMapper {
 
-
-
-
 //    entity to dto
     public static CategoryDTO tocategoryDTO(Category category)
     {
@@ -21,9 +18,7 @@ public class CategoryMapper {
         categoryDTO.setProducts(category.getProducts().stream().map(ProductMapper::toProductDTO).toList());
         return categoryDTO;
     }
-
-
-//    dtp to entity
+//    dto to entity
 
     public static Category toCategoryEntity(CategoryDTO categoryDTO)
     {
